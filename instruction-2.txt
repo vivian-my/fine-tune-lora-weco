@@ -1,0 +1,8 @@
+Hyper-parameter Optimization for three variants: (a) learning rate; (b) LoRa - Rank; (3) LoRa - Target-Modules. The aim is to search for best hyper-parameters to achieve minimized loss on evaluation set. Do not change the PEFT method, only focus on optimizing hyper-parameters. 
+Model & data in this run: Llama-3.2-1B with a smaller fine-tuning subset of Tulu-3.
+Reference recipe from a larger setting (for intuition only): On Llama-3.1-8B with the full Tulu-3 dataset, a strong configuration was:
+Learning rate: 5e-5
+Rank: 128
+Target modules: All layers
+Because our model and dataset are smaller, the optimal LR and rank may shift (often higher LR and lower rank can work well). 
+Use the prior as a starting hint, not a hard constraint.

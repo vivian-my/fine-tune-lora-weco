@@ -1,0 +1,12 @@
+Hyper-parameter Optimization for three variants: (a) learning rate; (b) LoRa - Rank; (3) LoRa - Target-Modules. The aim is to search for best hyper-parameters to achieve minimized loss on evaluation set. Do not change the PEFT method, only focus on optimizing hyper-parameters. 
+To help you better optimize the solutions, here are background information of the task. 
+Dataset Information: Tulu-3
+Dataset Size: 50000
+Model information: LLAMA-3.2-1B-Instruct.
+Searching Range for learning rate: [1e-6, 1e-1]
+Searching Range for lora rank: [1, 256]
+Searching Range for lora target modules: attention only, MLP layers, all layers
+Based on the model and dataset information, think for some strategies for fine-tuning small size of dataset on 1B model. This helps you to optimize the hyper-parameters smartly.
+
+
+

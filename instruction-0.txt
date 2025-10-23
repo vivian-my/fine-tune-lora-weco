@@ -1,0 +1,4 @@
+"Hyper-parameter Optimization for three variants: 
+(a) learning rate; (b) LoRa - Rank; (3) LoRa - Target-Modules. 
+The aim is to search for best hyper-parameters to achieve minimized loss on evaluation set. 
+Do not change the PEFT method, only focus on optimizing hyper-parameters. "
